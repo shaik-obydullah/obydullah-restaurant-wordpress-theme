@@ -2,7 +2,7 @@
 /*
  * =================================================================
  * Theme Name: Obydullah Restaurant
- * Version: 1.0.3
+ * Version: 1.0.4
  * Author: Shaik Obydullah
  * Author URI: https://obydullah.com
  * Purpose: Obydullah Restaurant Theme Functions
@@ -28,7 +28,7 @@ function obirc_assets() {
         'obirc-font-awesome',
         get_template_directory_uri() . '/assets/vendor/fontawesome/css/all.min.css',
         [],
-        '7.2.0'
+        '7.3.0'
     );
 
     wp_enqueue_style(

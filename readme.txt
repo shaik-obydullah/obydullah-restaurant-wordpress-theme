@@ -1,15 +1,14 @@
 === Obydullah Restaurant Theme ===
 Contributors: obydullah
-Donate link: https://obydullah.com
 Tags: restaurant, food, cafe, modern, responsive
 Requires at least: 6.0
-Tested up to: 8.0
+Tested up to: 7.0
 Requires PHP: 8.0
 Stable tag: 1.0.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Modern restaurant WordPress theme with menu, reservations, and responsive design.
+A modern WordPress theme for restaurants, cafés, bistros, and other food businesses, featuring responsive layouts, menu sections, and reservation-ready design.
 
 == Description ==
 
@@ -29,7 +28,7 @@ Obydullah Restaurant is a modern, elegant WordPress theme crafted specifically f
 
 1. Upload the `obydullah-restaurant` folder to the `/wp-content/themes/` directory.
 2. Activate the theme through the 'Appearance > Themes' menu in WordPress.
-3. Install and activate any recommended plugins if prompted.
+3. Install and activate any recommended plugins.
 4. Customize your site's appearance via 'Appearance > Customize'.
 
 == Recommended Plugins ==
@@ -42,16 +41,41 @@ Obydullah Restaurant is a modern, elegant WordPress theme crafted specifically f
 You can easily customize the theme by navigating to:
 Appearance → Customize → Contact Info
 
-This section allows you to update your restaurant's address, phone number, and email address.
+This section allows you to update your restaurant's address, phone number, and Opening Hours.
 
 == Changelog ==
 
-= 1.0 =
-* Released: June 2026
-* Initial release
-* Core theme features implemented
-* Customizer settings for contact info added
-* Fully responsive layout completed
+= 1.0.4 =
+* Updated Font Awesome to version 7.3.0.
+* Improved accessibility and keyboard navigation.
+* Optimized responsive navigation and mobile menu.
+* Refined theme styling and layout consistency.
+* Updated third-party resource documentation.
+* Minor bug fixes and performance improvements.
+
+= 1.0.3 =
+* Improved Customizer options.
+* Enhanced responsive layout for tablets and mobile devices.
+* Fixed styling issues in navigation and footer.
+
+= 1.0.2 =
+* Improved compatibility with the latest WordPress version.
+* Optimized CSS and JavaScript assets.
+* Fixed minor layout and spacing issues.
+
+= 1.0.1 =
+* Fixed minor bugs.
+* Improved theme stability and performance.
+* Updated documentation.
+
+= 1.0.0 =
+* Initial public release.
+* Responsive restaurant-focused design.
+* Customizer options for contact information.
+* Hero, menu, testimonials, and events sections.
+* Custom navigation menu support.
+* SEO-friendly semantic markup.
+* Font Awesome (locally hosted).
 
 == Copyright ==
 
@@ -74,26 +98,24 @@ This theme bundles the following third-party resources:
 
 === Fonts ===
 
-Google Fonts (loaded via CDN)
-
-Cormorant Garamond Font
-Copyright (c) The Cormorant Garamond Project Authors
-License: SIL Open Font License, 1.1
+Cormorant Garamond
 Source: https://fonts.google.com/specimen/Cormorant+Garamond
+License: SIL Open Font License 1.1
+https://scripts.sil.org/OFL
 
-Montserrat Font
-Copyright (c) The Montserrat Project Authors
-License: SIL Open Font License, 1.1
+Montserrat
 Source: https://fonts.google.com/specimen/Montserrat
+License: SIL Open Font License 1.1
+https://scripts.sil.org/OFL
 
-Font Awesome Icons (locally hosted)
-Copyright (c) 2026 Fonticons, Inc.
-License: SIL Open Font License 1.1 (fonts) and MIT License (code)
+== Third-Party Resources ==
+
+Font Awesome Free 7.3.0
 Source: https://fontawesome.com/
 
-Google Fonts (loaded via CDN)
-License: SIL Open Font License, 1.1
-Source: https://fonts.google.com/
+License:
+- MIT License (code): https://opensource.org/licenses/MIT
+- SIL Open Font License 1.1 (fonts): https://scripts.sil.org/OFL
 
 === Images ===
 

@@ -3,9 +3,9 @@ Contributors: obydullah
 Donate link: https://obydullah.com
 Tags: restaurant, food, cafe, modern, responsive
 Requires at least: 6.0
-Tested up to: 7.0
-Requires PHP: 7.4
-Stable tag: 1.0
+Tested up to: 8.0
+Requires PHP: 8.0
+Stable tag: 1.0.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -35,7 +35,7 @@ Obydullah Restaurant is a modern, elegant WordPress theme crafted specifically f
 == Recommended Plugins ==
 
 * Contact Form 7 – for adding contact forms
-* Obydullah Restaurant Core (if available) – for additional custom post types and shortcodes
+* Obydullah Restaurant Core – for additional custom post types and shortcodes
 
 == Customization ==
 

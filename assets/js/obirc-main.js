@@ -1,7 +1,7 @@
 /*!
  * =================================================================
  * Theme Name: Obydullah Restaurant
- * Version: 1.0.0
+ * Version: 1.0.4
  * Author: Shaik Obydullah
  * Author URI: https://obydullah.com
  * Purpose: Main JavaScript

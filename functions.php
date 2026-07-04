@@ -168,6 +168,7 @@ add_action('customize_register', 'obirc_customize_register');
 /* ======================================================
  *  5. Admin Notice
  * ====================================================== */
+
 function obirc_admin_notice() {
     $screen = get_current_screen();
     if ( $screen && $screen->base !== 'themes' ) {
@@ -183,21 +184,21 @@ function obirc_admin_notice() {
     ?>
 <div class="notice notice-info is-dismissible">
     <p><strong><?php esc_html_e( 'Obydullah Restaurant Theme', 'obydullah-restaurant' ); ?></strong> —
-        <?php esc_html_e( 'Install recommended plugins:', 'obydullah-restaurant' ); ?></p>
+        <?php esc_html_e( 'For full functionality, we recommend installing the following plugins:', 'obydullah-restaurant' ); ?>
+    </p>
     <ul style="list-style: disc; margin-left: 1.5em;">
         <?php if ( ! $core_active ) : ?>
-        <li><strong>Obydullah Restaurant Core</strong> –
-            <?php esc_html_e( 'menu & testimonials system', 'obydullah-restaurant' ); ?></li>
+        <li><strong><?php esc_html_e( 'Obydullah Restaurant Core', 'obydullah-restaurant' ); ?></strong> –
+            <?php esc_html_e( 'adds menu & testimonials management', 'obydullah-restaurant' ); ?></li>
         <?php endif; ?>
         <?php if ( ! $cf7_active ) : ?>
-        <li><strong>Contact Form 7</strong> –
-            <?php esc_html_e( 'contact form support', 'obydullah-restaurant' ); ?></li>
+        <li><strong><?php esc_html_e( 'Contact Form 7', 'obydullah-restaurant' ); ?></strong> –
+            <?php esc_html_e( 'provides contact form support', 'obydullah-restaurant' ); ?></li>
         <?php endif; ?>
     </ul>
     <p>
-        <a href="<?php echo esc_url( admin_url( 'plugin-install.php?s=obydullah+restaurant+core&tab=search&type=term' ) ); ?>"
-            class="button button-primary">
-            <?php esc_html_e( 'Install Plugins', 'obydullah-restaurant' ); ?>
+        <a href="<?php echo esc_url( admin_url( 'plugin-install.php' ) ); ?>" class="button button-primary">
+            <?php esc_html_e( 'Go to Plugin Installer', 'obydullah-restaurant' ); ?>
         </a>
     </p>
 </div>

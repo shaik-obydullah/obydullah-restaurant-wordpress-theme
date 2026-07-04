@@ -2726,6 +2726,10 @@ body.admin-bar .mobile-nav__panel {
   line-height: 1.2;
   display: block;
   font-family: "Cormorant Garamond", Georgia, serif;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  max-width: 100%;
 }
 
 .single-post__meta {

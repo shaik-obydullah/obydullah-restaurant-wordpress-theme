@@ -92,8 +92,6 @@ function obirc_setup() {
     add_theme_support('wp-block-styles');
     add_theme_support('responsive-embeds');
     add_theme_support('align-wide');
-    add_theme_support('editor-styles');
-    add_editor_style('assets/css/editor-style.css');
 
     add_theme_support('html5', [
         'search-form',
@@ -108,6 +106,10 @@ function obirc_setup() {
     register_nav_menus([
         'primary' => __('Primary Menu', 'obydullah-restaurant'),
     ]);
+
+    if ( ! isset( $GLOBALS['content_width'] ) ) {
+        $GLOBALS['content_width'] = 800;
+    }
 }
 add_action('after_setup_theme', 'obirc_setup');
 

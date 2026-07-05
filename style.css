@@ -2,10 +2,10 @@
 Theme Name: Obydullah Restaurant
 Theme URI: https://obydullah.com/project/obydullah-restaurant-wordpress-theme
 Description: A modern WordPress theme designed for restaurants, cafés, and culinary businesses. Built with performance, flexibility, and clean design in mind.
-Version: 1.0.4
+Version: 1.0.5
 Author: Shaik Obydullah
 Author URI: https://obydullah.com
-Tags: restaurant, food, drink, cafe, reservation
+Tags: food-and-drink
 Text Domain: obydullah-restaurant
 Domain Path: /languages
 Tested up to: 7.0
@@ -17,3 +17,37 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Copyright (C) 2026 Shaik Obydullah
 This theme is licensed under the GPL v2.0 or later.
 */
+
+/* WordPress core alignment & caption classes */
+.alignright {
+  float: right;
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+.alignleft {
+  float: left;
+  margin-right: 1.5rem;
+  margin-bottom: 1rem;
+}
+.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+}
+.wp-caption {
+  max-width: 100%;
+  background: #f5f5f5;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+.wp-caption-text {
+  font-size: 0.85rem;
+  text-align: center;
+  color: #666;
+}
+.sticky,
+.gallery-caption,
+.bypostauthor {
+  /* optional */
+}

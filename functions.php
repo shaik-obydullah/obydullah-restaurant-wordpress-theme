@@ -2,7 +2,7 @@
 /*
  * =================================================================
  * Theme Name: Obydullah Restaurant
- * Version: 1.0.4
+ * Version: 1.0.5
  * Author: Shaik Obydullah
  * Author URI: https://obydullah.com
  * Purpose: Obydullah Restaurant Theme Functions
@@ -110,6 +110,13 @@ function obirc_setup() {
     if ( ! isset( $GLOBALS['content_width'] ) ) {
         $GLOBALS['content_width'] = 800;
     }
+
+    add_theme_support( 'custom-logo', array(
+        'height'      => 100,
+        'width'       => 400,
+        'flex-height' => true,
+        'flex-width'  => true,
+    ) );
 }
 add_action('after_setup_theme', 'obirc_setup');
 
@@ -207,3 +214,10 @@ function obirc_admin_notice() {
 <?php
 }
 add_action( 'admin_notices', 'obirc_admin_notice' );
+
+function obirc_enqueue_comment_reply() {
+    if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
+        wp_enqueue_script( 'comment-reply' );
+    }
+}
+add_action( 'wp_enqueue_scripts', 'obirc_enqueue_comment_reply' );

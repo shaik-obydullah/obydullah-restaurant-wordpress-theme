@@ -4,7 +4,7 @@ Tags: restaurant, food, cafe, modern, responsive
 Requires at least: 6.0
 Tested up to: 7.0
 Requires PHP: 8.0
-Stable tag: 1.0.4
+Stable tag: 1.0.5
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -45,6 +45,9 @@ Appearance → Customize → Contact Info
 This section allows you to update your restaurant's address, phone number, and Opening Hours.
 
 == Changelog ==
+
+= 1.0.5 =
+* Logo support
 
 = 1.0.4 =
 * Updated Font Awesome to version 7.3.0.

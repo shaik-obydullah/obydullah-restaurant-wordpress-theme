@@ -19,17 +19,21 @@
     <header class="site-header" id="siteHeader">
         <div class="header__container">
             <!-- Logo -->
-            <a href="<?php echo esc_url(home_url('/')); ?>" class="header__logo"
-                aria-label="<?php echo esc_attr(get_bloginfo('name')); ?>">
+            <?php if ( has_custom_logo() ) : ?>
+            <?php the_custom_logo(); ?>
+            <?php else : ?>
+            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="header__logo"
+                aria-label="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>">
                 <span class="logo__icon">
                     <i class="fa-solid fa-pepper-hot"></i>
                 </span>
                 <span class="logo__text">
                     <span class="logo__text--accent">
-                        <?php echo esc_html(get_bloginfo('name')); ?>
+                        <?php echo esc_html( get_bloginfo( 'name' ) ); ?>
                     </span>
                 </span>
             </a>
+            <?php endif; ?>
 
             <!-- Desktop Navigation -->
             <nav class="nav nav--desktop" id="desktopNav" aria-label="Main navigation">

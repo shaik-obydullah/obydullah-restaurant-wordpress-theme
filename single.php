@@ -35,6 +35,12 @@ get_header(); ?>
                         <?php the_category( ', ' ); ?>
                     </span>
                     <?php endif; ?>
+                    <?php if ( has_tag() ) : ?>
+                    <span class="single-post__tags">
+                        <i class="fa-solid fa-tags"></i>
+                        <?php the_tags( '', ', ' ); ?>
+                    </span>
+                    <?php endif; ?>
                 </div>
             </header>
 

@@ -13,6 +13,7 @@ A modern WordPress theme for restaurants, cafés, bistros, and other food busine
 == Description ==
 
 Obydullah Restaurant is a modern, elegant WordPress theme crafted specifically for restaurants, cafés, bistros, and food-related businesses. It combines a clean, professional layout with robust functionality, offering dedicated sections for menus, testimonials, chef specials, and contact details. The theme is fully responsive, ensuring your site looks stunning on all devices, and includes customizable options to tailor the look and feel to match your brand identity.
+* This theme does not include built‑in WooCommerce support.
 
 == Features ==
 

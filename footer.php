@@ -8,7 +8,7 @@ if ( ! defined( 'OBIRC_VERSION' ) ) {
     <div class="site-footer__container">
         <div class="site-footer__bottom">
             <div class="site-footer__copyright">
-                &copy; <?php echo date( 'Y' ); ?> <?php echo esc_html( get_bloginfo( 'name' ) ); ?>
+                &copy; <?php echo esc_html( date( 'Y' ) ); ?> <?php echo esc_html( get_bloginfo( 'name' ) ); ?>
             </div>
         </div>
     </div>
@@ -29,7 +29,7 @@ if ( empty( $footer_posts ) ) {
     <div class="site-footer__container">
         <div class="site-footer__bottom">
             <div class="site-footer__copyright">
-                &copy; <?php echo date( 'Y' ); ?> <?php echo esc_html( get_bloginfo( 'name' ) ); ?>
+                &copy; <?php echo esc_html( date( 'Y' ) ); ?> <?php echo esc_html( get_bloginfo( 'name' ) ); ?>
             </div>
         </div>
     </div>
@@ -53,7 +53,7 @@ $copyright   = get_post_meta( $footer_id, 'obirc_footer_copyright', true );
 $logo_text   = $logo_text ?: __( 'Obydullah', 'obydullah-restaurant' );
 $logo_accent = $logo_accent ?: __( 'Restaurant', 'obydullah-restaurant' );
 $tagline     = $tagline ?: __( 'A modern dining experience built around the soul of the chili pepper. Slow‑cooked, bold, and unforgettable.', 'obydullah-restaurant' );
-$copyright   = $copyright ?: sprintf( __( '&copy; %s Obydullah Restaurant Theme. All rights reserved.', 'obydullah-restaurant' ), date( 'Y' ) );
+$copyright   = $copyright ?: sprintf( __( '&copy; %s %s. All rights reserved.', 'obydullah-restaurant' ), esc_html( date( 'Y' ) ), esc_html( get_bloginfo( 'name' ) ) );
 ?>
 
 <footer class="site-footer" id="siteFooter">
@@ -69,17 +69,17 @@ $copyright   = $copyright ?: sprintf( __( '&copy; %s Obydullah Restaurant Theme.
                 <div class="site-footer__social">
                     <?php if ( ! empty( $social['instagram'] ) ) : ?>
                     <a href="<?php echo esc_url( $social['instagram'] ); ?>"
-                        aria-label="<?php esc_attr_e( 'Instagram', 'obydullah-restaurant' ); ?>" target="_blank"><i
+                        aria-label="<?php esc_attr_e( 'Instagram', 'obydullah-restaurant' ); ?>" target="_blank" rel="noopener noreferrer"><i
                             class="fa-brands fa-instagram"></i></a>
                     <?php endif; ?>
                     <?php if ( ! empty( $social['facebook'] ) ) : ?>
                     <a href="<?php echo esc_url( $social['facebook'] ); ?>"
-                        aria-label="<?php esc_attr_e( 'Facebook', 'obydullah-restaurant' ); ?>" target="_blank"><i
+                        aria-label="<?php esc_attr_e( 'Facebook', 'obydullah-restaurant' ); ?>" target="_blank" rel="noopener noreferrer"><i
                             class="fa-brands fa-facebook-f"></i></a>
                     <?php endif; ?>
                     <?php if ( ! empty( $social['x'] ) ) : ?>
                     <a href="<?php echo esc_url( $social['x'] ); ?>"
-                        aria-label="<?php esc_attr_e( 'X', 'obydullah-restaurant' ); ?>" target="_blank"><i
+                        aria-label="<?php esc_attr_e( 'X', 'obydullah-restaurant' ); ?>" target="_blank" rel="noopener noreferrer"><i
                             class="fa-brands fa-x-twitter"></i></a>
                     <?php endif; ?>
                 </div>

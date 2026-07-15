@@ -23,7 +23,7 @@
             <div class="post-item__meta">
                 <span class="post-item__date">
                     <i class="fa-regular fa-calendar"></i>
-                    <?php echo get_the_date(); ?>
+                    <?php echo esc_html( get_the_date() ); ?>
                 </span>
                 <span class="post-item__author">
                     <i class="fa-regular fa-user"></i>

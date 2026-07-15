@@ -54,7 +54,7 @@ if ( empty( $kicker ) || empty( $title ) || empty( $chef ) || empty( $phil ) || 
                         aria-label="Restaurant events">
                         <div class="event-slider__slides" id="eventSlides">
                             <?php $i = 0; foreach ( $slides as $slide ) : ?>
-                            <div class="event-slider__slide <?php echo $i === 0 ? 'event-slider__slide--active' : ''; ?>"
+                            <div class="event-slider__slide <?php echo esc_attr( $i === 0 ? 'event-slider__slide--active' : '' ); ?>"
                                 role="group" aria-roledescription="slide"
                                 aria-label="<?php echo esc_attr( ( $i + 1 ) . ' of ' . count( $slides ) ); ?>">
                                 <div class="event-slider__bg"
@@ -75,7 +75,7 @@ if ( empty( $kicker ) || empty( $title ) || empty( $chef ) || empty( $phil ) || 
 
                         <div class="event-slider__dots" id="eventDots" aria-hidden="true">
                             <?php for ( $j = 0; $j < count( $slides ); $j++ ) : ?>
-                            <button class="event-slider__dot <?php echo $j === 0 ? 'event-slider__dot--active' : ''; ?>"
+                            <button class="event-slider__dot <?php echo esc_attr( $j === 0 ? 'event-slider__dot--active' : '' ); ?>"
                                 data-slide="<?php echo esc_attr( $j ); ?>"></button>
                             <?php endfor; ?>
                         </div>

@@ -4,7 +4,7 @@ get_header(); ?>
 <main id="primary" class="site-main">
     <div class="container error-404-wrapper">
         <section class="error-404">
-            <span class="error-icon">🍽️</span>
+            <span class="error-icon"><i class="fa-solid fa-utensils"></i></span>
             <h1 class="error-title"><?php esc_html_e( '404', 'obydullah-restaurant' ); ?></h1>
             <h2 class="error-subtitle"><?php esc_html_e( 'Page Not Found', 'obydullah-restaurant' ); ?></h2>
             <p class="error-message">
@@ -19,6 +19,10 @@ get_header(); ?>
                     <i class="fa-solid fa-utensils"></i>
                     <?php esc_html_e( 'View Our Menu', 'obydullah-restaurant' ); ?>
                 </a>
+            </div>
+
+            <div class="error-search">
+                <?php get_search_form(); ?>
             </div>
         </section>
     </div>

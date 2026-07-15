@@ -9,7 +9,7 @@ get_header(); ?>
                 <?php
                 printf(
                     esc_html__( 'Search Results for: %s', 'obydullah-restaurant' ),
-                    '<span>' . get_search_query() . '</span>'
+                    '<span>' . esc_html( get_search_query() ) . '</span>'
                 );
                 ?>
             </h1>
@@ -47,7 +47,7 @@ get_header(); ?>
         <?php else : ?>
 
         <div class="no-results">
-            <span class="no-results-icon">🔍</span>
+            <span class="no-results-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
             <h2 class="no-results-title"><?php esc_html_e( 'No Results Found', 'obydullah-restaurant' ); ?></h2>
             <p class="no-results-message">
                 <?php esc_html_e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'obydullah-restaurant' ); ?>

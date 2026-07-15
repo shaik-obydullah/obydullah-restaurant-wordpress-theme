@@ -53,7 +53,7 @@ function obirc_assets() {
     );
 
     wp_enqueue_script(
-        'obirc-js',
+        'obirc-main',
         get_template_directory_uri() . '/assets/js/obirc-main.js',
         [],
         '1.0',
@@ -104,12 +104,14 @@ function obirc_setup() {
     ]);
 
     register_nav_menus([
-        'primary' => __('Primary Menu', 'obydullah-restaurant'),
+        'obirc_primary' => __('Primary Menu', 'obydullah-restaurant'),
     ]);
 
     if ( ! isset( $GLOBALS['content_width'] ) ) {
         $GLOBALS['content_width'] = 800;
     }
+
+    add_theme_support( 'customize-selective-refresh-widgets' );
 
     add_theme_support( 'custom-logo', array(
         'height'      => 100,
@@ -128,7 +130,7 @@ function obirc_widgets_init() {
 
     register_sidebar([
         'name'          => __('Sidebar', 'obydullah-restaurant'),
-        'id'            => 'sidebar-1',
+        'id'            => 'obirc-sidebar-1',
         'description'   => __('Main sidebar area', 'obydullah-restaurant'),
         'before_widget' => '<div class="widget">',
         'after_widget'  => '</div>',

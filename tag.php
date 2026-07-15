@@ -14,7 +14,7 @@ get_header(); ?>
                 <?php
                 printf(
                     esc_html__( 'Tag: %s', 'obydullah-restaurant' ),
-                    '<span>' . single_tag_title( '', false ) . '</span>'
+                    '<span>' . esc_html( single_tag_title( '', false ) ) . '</span>'
                 );
                 ?>
             </h1>

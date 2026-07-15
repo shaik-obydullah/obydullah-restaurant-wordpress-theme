@@ -40,20 +40,23 @@
                 <?php
                     $menu_locations = get_nav_menu_locations();
 
-                    if (isset($menu_locations['primary'])) {
-                        $menu = wp_get_nav_menu_object($menu_locations['primary']);
-                        $menu_items = wp_get_nav_menu_items($menu->term_id);
+                    if ( isset( $menu_locations['obirc_primary'] ) ) {
+                        $menu = wp_get_nav_menu_object( $menu_locations['obirc_primary'] );
 
-                        if ($menu_items) {
-                            echo '<ul class="nav__list">';
-                            foreach ($menu_items as $item) {
-                                echo '<li class="nav__item">';
-                                echo '<a href="' . esc_url($item->url) . '" class="nav__link">';
-                                echo esc_html($item->title);
-                                echo '</a>';
-                                echo '</li>';
+                        if ( $menu && ! is_wp_error( $menu ) ) {
+                            $menu_items = wp_get_nav_menu_items( $menu->term_id );
+
+                            if ( $menu_items ) {
+                                echo '<ul class="nav__list">';
+                                foreach ( $menu_items as $item ) {
+                                    echo '<li class="nav__item">';
+                                    echo '<a href="' . esc_url( $item->url ) . '" class="nav__link">';
+                                    echo esc_html( $item->title );
+                                    echo '</a>';
+                                    echo '</li>';
+                                }
+                                echo '</ul>';
                             }
-                            echo '</ul>';
                         }
                     }
                 ?>
@@ -75,20 +78,23 @@
                 <?php
                 $menu_locations = get_nav_menu_locations();
 
-                if (isset($menu_locations['primary'])) {
-                    $menu = wp_get_nav_menu_object($menu_locations['primary']);
-                    $menu_items = wp_get_nav_menu_items($menu->term_id);
+                if ( isset( $menu_locations['obirc_primary'] ) ) {
+                    $menu = wp_get_nav_menu_object( $menu_locations['obirc_primary'] );
 
-                    if ($menu_items) {
-                        echo '<ul class="mobile-nav__list">';
-                        foreach ($menu_items as $item) {
-                            echo '<li class="mobile-nav__item">';
-                            echo '<a href="' . esc_url($item->url) . '" class="mobile-nav__link">';
-                            echo esc_html($item->title);
-                            echo '</a>';
-                            echo '</li>';
+                    if ( $menu && ! is_wp_error( $menu ) ) {
+                        $menu_items = wp_get_nav_menu_items( $menu->term_id );
+
+                        if ( $menu_items ) {
+                            echo '<ul class="mobile-nav__list">';
+                            foreach ( $menu_items as $item ) {
+                                echo '<li class="mobile-nav__item">';
+                                echo '<a href="' . esc_url( $item->url ) . '" class="mobile-nav__link">';
+                                echo esc_html( $item->title );
+                                echo '</a>';
+                                echo '</li>';
+                            }
+                            echo '</ul>';
                         }
-                        echo '</ul>';
                     }
                 }
                 ?>

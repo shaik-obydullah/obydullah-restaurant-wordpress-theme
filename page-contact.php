@@ -77,7 +77,7 @@ $display_form = $form_shortcode ?: ( $cf7_active ? obirc_get_first_cf7_shortcode
                         <p><?php esc_html_e( 'To use this contact form, please install and activate the free Contact Form 7 plugin from the WordPress plugin repository.', 'obydullah-restaurant' ); ?>
                         </p>
                         <p><a href="<?php echo esc_url( admin_url( 'plugin-install.php?s=contact+form+7&tab=search&type=term' ) ); ?>"
-                                target="_blank"><?php esc_html_e( 'Install Contact Form 7 →', 'obydullah-restaurant' ); ?></a>
+                                target="_blank" rel="noopener noreferrer"><?php esc_html_e( 'Install Contact Form 7 →', 'obydullah-restaurant' ); ?></a>
                         </p>
                     </div>
                     <?php endif; ?>
@@ -101,7 +101,7 @@ $display_form = $form_shortcode ?: ( $cf7_active ? obirc_get_first_cf7_shortcode
                     </div>
                     <?php if ( ! empty( $map_url ) ) : ?>
                     <div class="contact-map">
-                        <iframe src="<?php echo esc_url( $map_url ); ?>" width="100%" height="250" style="border:0;"
+                        <iframe src="<?php echo esc_url( $map_url ); ?>" width="100%" height="250" style="border:0;" title="<?php esc_attr_e( 'Restaurant location on map', 'obydullah-restaurant' ); ?>"
                             allowfullscreen="" loading="lazy"></iframe>
                     </div>
                     <?php endif; ?>

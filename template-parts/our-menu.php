@@ -123,7 +123,7 @@ if ( ! $has_items ) {
                         echo '<p>' . esc_html__( 'No menu items found.', 'obydullah-restaurant' ) . '</p>';
                     }
                 ?>
-                <a href="/menu"
+                <a href="<?php echo esc_url( home_url( '/menu' ) ); ?>"
                     class="btn btn--primary featured-menu__cta"><?php esc_html_e( 'View Full Menu', 'obydullah-restaurant' ); ?></a>
             </div>
         </div>

@@ -23,7 +23,7 @@ get_header(); ?>
                 <div class="single-post__meta">
                     <span class="single-post__date">
                         <i class="fa-regular fa-calendar"></i>
-                        <?php echo get_the_date(); ?>
+                        <?php echo esc_html( get_the_date() ); ?>
                     </span>
                     <span class="single-post__author">
                         <i class="fa-regular fa-user"></i>

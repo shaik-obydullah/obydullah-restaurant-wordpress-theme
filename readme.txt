@@ -1,10 +1,10 @@
 === Obydullah Restaurant Theme ===
 Contributors: obydullah
 Tags: restaurant, food, cafe, modern, responsive
-Requires at least: 6.0
-Tested up to: 7.0
+Requires at least: 6.2
+Tested up to: 7.0.1
 Requires PHP: 8.0
-Stable tag: 1.0.5
+Stable tag: 1.0.6
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 

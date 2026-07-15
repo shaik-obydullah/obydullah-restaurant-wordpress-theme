@@ -52,7 +52,7 @@ if ( defined( 'OBIRC_VERSION' ) ) {
     <!-- Dots -->
     <div class="slider__dots" id="sliderDots" aria-hidden="true">
         <?php for ( $d = 0; $d < $total; $d++ ) : ?>
-        <button class="slider__dot <?php echo ( $d === 0 ) ? 'slider__dot--active' : ''; ?>"
+        <button class="slider__dot <?php echo esc_attr( ( $d === 0 ) ? 'slider__dot--active' : '' ); ?>"
             data-slide="<?php echo esc_attr( $d ); ?>"
             aria-label="<?php echo esc_attr( sprintf( 'Go to slide %d', $d + 1 ) ); ?>"></button>
         <?php endfor; ?>

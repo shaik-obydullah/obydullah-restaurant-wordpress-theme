@@ -182,28 +182,45 @@ button {
    7. Accessibility & Motion Reduction
    ========================================================================== */
 
-:focus-visible {
+.skip-link {
+  position: absolute;
+  top: -1000px;
+  left: -1000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  z-index: 999999;
+}
+.skip-link:focus {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+  padding: 15px 25px;
+  background: #000;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: underline;
+  clip: auto;
+  overflow: visible;
+}
+
+/* Explicit keyboard focus for interactive elements */
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
   outline: 3px solid var(--color-chili-red);
   outline-offset: 2px;
 }
 
-.skip-link {
-  position: absolute;
-  left: -9999px;
-  top: auto;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-}
-.skip-link:focus-visible {
-  left: 1rem;
-  top: 1rem;
-  width: auto;
-  height: auto;
-  background: var(--color-soft-black);
-  color: white;
-  padding: 0.5rem 1rem;
-  z-index: 10000;
+/* Remove mouse focus outlines (exclude skip-link which needs visible focus) */
+:focus:not(:focus-visible):not(.skip-link:focus) {
+  outline: none;
 }
 
 @media (prefers-reduced-motion: reduce) {

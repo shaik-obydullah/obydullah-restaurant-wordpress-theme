@@ -1,0 +1,158 @@
+/*
+Theme Name: Obydullah Restaurant
+Description: RTL stylesheet for Obydullah Restaurant theme.
+*/
+
+body {
+  direction: rtl;
+  unicode-bidi: embed;
+}
+
+/* Alignments */
+.alignright {
+  float: left;
+  margin-right: 1.5rem;
+  margin-left: 0;
+}
+
+.alignleft {
+  float: right;
+  margin-left: 1.5rem;
+  margin-right: 0;
+}
+
+/* Header */
+.header__container {
+  flex-direction: row-reverse;
+}
+
+.nav--desktop {
+  margin-left: 0;
+  margin-right: 20px;
+}
+
+.nav__link {
+  border-bottom-width: 0;
+  border-top: 2px solid transparent;
+}
+
+.nav__link:hover,
+.nav__link--active {
+  border-bottom-color: transparent;
+  border-top-color: #b23a2d;
+}
+
+/* Hero Slider */
+.slider__arrow--left {
+  left: auto;
+  right: 1.5rem;
+}
+
+.slider__arrow--right {
+  right: auto;
+  left: 1.5rem;
+}
+
+/* Menu Highlight */
+.menu-highlight__image {
+  order: 2;
+}
+
+.menu-highlight__text {
+  order: 1;
+}
+
+/* Featured Menu */
+.featured-menu__item-header {
+  flex-direction: row-reverse;
+}
+
+/* Reservation */
+.reservation__grid {
+  flex-direction: row-reverse;
+}
+
+/* Footer */
+body.footer .site-footer__logo {
+  flex-direction: row-reverse;
+}
+
+.site-footer__heading::after {
+  left: auto;
+  right: 0;
+}
+
+/* Contact Page */
+.contact-page__grid {
+  flex-direction: row-reverse;
+}
+
+.contact-info__list li {
+  flex-direction: row-reverse;
+}
+
+/* Event Slider */
+.event-slider__arrow--left {
+  left: auto;
+  right: 1rem;
+}
+
+.event-slider__arrow--right {
+  right: auto;
+  left: 1rem;
+}
+
+/* Page Default */
+.page-default__content ul,
+.page-default__content ol {
+  margin: 0 1.5rem 1.2rem 0;
+}
+
+/* Search Form */
+.search-form {
+  flex-direction: row-reverse;
+}
+
+/* Single Post */
+.single-post__meta {
+  flex-direction: row-reverse;
+}
+
+.single-post__navigation {
+  flex-direction: row-reverse;
+}
+
+/* Footer Social & Contact */
+.site-footer__social {
+  flex-direction: row-reverse;
+}
+
+.site-footer__contact li {
+  flex-direction: row-reverse;
+}
+
+/* Menu Full Page */
+.menu-section__title::after {
+  left: auto;
+  right: 0;
+}
+
+/* About Page Grid */
+.about-page__grid {
+  flex-direction: row-reverse;
+}
+
+/* Booking Form */
+.booking-form__submit {
+  flex-direction: row-reverse;
+}
+
+/* Error 404 */
+.error-actions {
+  flex-direction: row-reverse;
+}
+
+/* Posts Grid Navigation */
+.pagination-wrapper .page-numbers {
+  /* Keep LTR numbers, only text flow changes */
+}

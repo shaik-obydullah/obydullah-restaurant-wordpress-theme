@@ -6,10 +6,6 @@
 
 get_header(); ?>
 
-<style>
-
-</style>
-
 <main id="primary" class="site-main">
     <div class="container archive-wrapper">
 

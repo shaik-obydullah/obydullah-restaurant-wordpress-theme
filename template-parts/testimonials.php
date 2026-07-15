@@ -72,7 +72,7 @@ if ( ! $testimonials->have_posts() ) {
                         <div class="testimonial-carousel__dots" id="testimonialDots">
                             <?php for ( $j = 0; $j < $i; $j++ ) : ?>
                             <button
-                                class="testimonial-carousel__dot <?php echo $j === 0 ? 'testimonial-carousel__dot--active' : ''; ?>"
+                                class="testimonial-carousel__dot <?php echo esc_attr( $j === 0 ? 'testimonial-carousel__dot--active' : '' ); ?>"
                                 data-slide="<?php echo esc_attr( $j ); ?>"></button>
                             <?php endfor; ?>
                         </div>

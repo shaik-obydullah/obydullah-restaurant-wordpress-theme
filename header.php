@@ -18,24 +18,26 @@
     <!-- Header / Navbar -->
     <header class="site-header" id="siteHeader">
         <div class="header__container">
-            <!-- Logo -->
-            <?php if ( has_custom_logo() ) : ?>
-            <?php the_custom_logo(); ?>
-            <?php else : ?>
-            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="header__logo"
-                aria-label="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>">
-                <span class="logo__icon">
-                    <i class="fa-solid fa-pepper-hot"></i>
-                </span>
-                <span class="logo__text">
-                    <span class="logo__text--accent">
-                        <?php echo esc_html( get_bloginfo( 'name' ) ); ?>
+            <!-- Logo (left column) -->
+            <div class="header__logo-area">
+                <?php if ( has_custom_logo() ) : ?>
+                <?php the_custom_logo(); ?>
+                <?php else : ?>
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="header__logo"
+                    aria-label="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>">
+                    <span class="logo__icon">
+                        <i class="fa-solid fa-pepper-hot"></i>
                     </span>
-                </span>
-            </a>
-            <?php endif; ?>
+                    <span class="logo__text">
+                        <span class="logo__text--accent">
+                            <?php echo esc_html( get_bloginfo( 'name' ) ); ?>
+                        </span>
+                    </span>
+                </a>
+                <?php endif; ?>
+            </div>
 
-            <!-- Desktop Navigation -->
+            <!-- Desktop Navigation (center column) -->
             <nav class="nav nav--desktop" id="desktopNav" aria-label="Main navigation">
                 <?php
                     $menu_locations = get_nav_menu_locations();
@@ -62,13 +64,15 @@
                 ?>
             </nav>
 
-            <!-- Hamburger Toggle Button (Mobile) -->
-            <button class="hamburger" id="hamburgerBtn" aria-label="Toggle navigation menu" aria-expanded="false"
-                type="button">
-                <span class="hamburger__line"></span>
-                <span class="hamburger__line"></span>
-                <span class="hamburger__line"></span>
-            </button>
+            <!-- Hamburger Toggle Button (right column, mobile only) -->
+            <div class="header__hamburger-area">
+                <button class="hamburger" id="hamburgerBtn" aria-label="Toggle navigation menu" aria-expanded="false"
+                    type="button">
+                    <span class="hamburger__line"></span>
+                    <span class="hamburger__line"></span>
+                    <span class="hamburger__line"></span>
+                </button>
+            </div>
         </div>
 
         <!-- Mobile Navigation Overlay -->

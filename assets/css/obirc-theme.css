@@ -91,9 +91,23 @@ body.nav--open .header__logo {
   margin: 0 auto;
   padding: 0 20px;
   height: 100%;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+}
+
+.header__logo-area {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-self: start;
+  z-index: 1002;
+}
+
+.header__hamburger-area {
+  display: flex;
+  align-items: center;
+  justify-self: end;
+  z-index: 1002;
 }
 
 .header__logo {
@@ -152,6 +166,7 @@ body.nav--open .custom-logo-link {
 
 .nav--desktop {
   display: none;
+  justify-self: center;
 }
 
 .nav__list {
@@ -396,10 +411,11 @@ body.nav--open .hamburger__line:nth-child(3) {
   }
 
   .nav--desktop {
-    display: block;
+    display: flex;
+    justify-content: center;
   }
 
-  .hamburger {
+  .header__hamburger-area {
     display: none;
   }
 
